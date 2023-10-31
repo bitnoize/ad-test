@@ -1,5 +1,5 @@
-*.secrets.*
 .cache
+.app-config.secrets.yml
 .env
 dist
 node_modules

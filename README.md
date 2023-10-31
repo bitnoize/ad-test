@@ -18,9 +18,6 @@ cp .app-config.secrets.yml.example .app-config.secrets.yml
 
 npm run build
 npm run start
-
-# Сборка контейнера
-
 ```
 
 Сборка продакшн контейнера
@@ -33,7 +30,6 @@ cp docker-compose.override.yml.example docker-compose.override.yml
 docker compose build
 docker compose up -d
 docker compose logs
-
 ```
 
 Тестирование

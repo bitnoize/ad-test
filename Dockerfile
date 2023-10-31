@@ -11,7 +11,7 @@ RUN set -eux; \
 WORKDIR /usr/src/ad-test
 
 COPY package*.json .
-COPY tsconfig.*.json .
+COPY tsconfig.json .
 
 RUN npm install
 

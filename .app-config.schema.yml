@@ -1,0 +1,32 @@
+type: object
+additionalProperties: false
+properties:
+  serverPort:
+    $ref: '#/definitions/ServerPort'
+  redisUrl:
+    $ref: '#/definitions/RedisUrl'
+  proxyUrl:
+    $ref: '#/definitions/ProxyUrl'
+  requestTimeout:
+    $ref: '#/definitions/RequestTimeout'
+required:
+  - serverPort
+  - redisUrl
+  - proxyUrl
+  - requestTimeout
+definitions:
+  ServerPort:
+    type: integer
+    minimum: 0
+    maximum: 65535
+  RedisUrl:
+    type: string
+    secret: true
+  ProxyUrl:
+    type: string
+    secret: true
+  RequestTimeout:
+    type: integer
+    minimum: 1000
+    maximum: 60000
+

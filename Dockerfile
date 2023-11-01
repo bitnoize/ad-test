@@ -1,5 +1,7 @@
 FROM ghcr.io/bitnoize/node:20-bookworm
 
+LABEL org.opencontainers.image.source=https://github.com/bitnoize/ad-test
+
 ARG DEBIAN_FRONTEND=noninteractive
 
 RUN set -eux; \

@@ -3,7 +3,9 @@ networks:
   ad-test-net:
     external: true
 
+services:
   server:
+    build: .
     image: ghcr.io/bitnoize/ad-test-server:latest
     environment:
       - UID=4020

@@ -10,8 +10,7 @@ RUN set -eux; \
 
 WORKDIR /usr/src/ad-test
 
-COPY package*.json .
-COPY tsconfig.json .
+COPY package.json package-lock.json tsconfig.json .
 
 RUN npm install
 
